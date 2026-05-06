@@ -3,8 +3,8 @@
 class BankAccount {
   readonly userId: number;
   readonly userName: string;
-//   private userBalance: number;
-protected userBalance: number; // use protector for access in child class
+  //   private userBalance: number;
+  protected userBalance: number; // use protector for access in child class
 
   constructor(userId: number, userName: string, userBalance: number) {
     this.userId = userId;
@@ -17,10 +17,10 @@ protected userBalance: number; // use protector for access in child class
   }
 }
 
-class StudentBankAccount extends BankAccount{
-    test(){
-        this.
-    }
+class StudentBankAccount extends BankAccount {
+  test() {
+    this.userBalance;
+  }
 }
 
 const mezbaBhaiAccount = new BankAccount(123, "Mezba", 200);
